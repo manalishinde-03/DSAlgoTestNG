@@ -1,0 +1,10 @@
+ Volume in drive C is Windows
+ Volume Serial Number is 628C-FD9A
+
+ Directory of C:\Users\manal_\Project
+
+07/26/2024  03:05 PM    <DIR>          .
+07/26/2024  02:59 PM    <DIR>          ..
+07/26/2024  03:05 PM                 0 test.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  834,584,408,064 bytes free
