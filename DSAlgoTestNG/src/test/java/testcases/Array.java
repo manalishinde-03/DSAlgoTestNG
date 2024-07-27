@@ -3,6 +3,7 @@ package testcases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pages.ArrayPage;
 import pages.HomePage;
 import pages.LoginPage;
 
@@ -36,6 +37,8 @@ public class Array extends BaseTest {
 		homePage.navigateToArrayFromDropDown();
 		Assert.assertEquals(driver.getTitle(), "Array");
 		
+		ArrayPage arrayPage = new ArrayPage(driver);
+		arrayPage.araaysInPython();
 		
 	}
 
