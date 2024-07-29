@@ -69,29 +69,18 @@ public class HomePage {
 		//  LoggerLoad.info("Login Successful!");
 	}
 	
-	/*
-	 * public void validateMsgFromExcelAfterLogin(String sheetname, Integer
-	 * rownumber) throws InvalidFormatException, IOException {
-	 * 
-	 * ExcelReader reader = new ExcelReader();
-	 * 
-	 * List<Map<String, String>> testdata =
-	 * reader.getData("./src/test/resources/ExcelTestData/LoginData.xlsx",
-	 * sheetname); String expectedMessage = testdata.get(rownumber).get("message");
-	 * validateMsgAfterLogin(expectedMessage); }
-	 */
 	
 	public void validateMsgAfterRegistration(String message, String username) {
 		String registerSuccessMsg = text_registerSuccessMsg.getText();
 		String expectedSuccessMsg = message+" "+username;  
 		
 		Assert.assertEquals(registerSuccessMsg,expectedSuccessMsg);
-		//LoggerLoad.info("Registration Successful!");
+		System.out.println("Registration Successful!");
 	}
 	
 	public void validateUserLandedOnHomePage() {
 		  this.driver.getPageSource().contains("NumpyNinja");
-		 // LoggerLoad.info("User landed on Home page!");
+		 System.out.println("User landed on Home page!");
 	}
 	
 	public void validateDataStructuresDropdown() {
