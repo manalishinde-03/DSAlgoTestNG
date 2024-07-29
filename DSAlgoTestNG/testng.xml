@@ -12,9 +12,9 @@
 		<include name="TC_05_LogoutSuccessful"></include>
 	  </methods>
 	  </class>-->
-	   <class name="testcases.Array">
+	   <class name="testcases.RegisterTestCases">
       <methods>
-		<include name ="TC_01_NavigateToArrayFromDropDown"></include>
+		<include name ="TC_03_ValidateRegistrationFormInvalidData"></include>
 		
 	  </methods>
 	  </class>

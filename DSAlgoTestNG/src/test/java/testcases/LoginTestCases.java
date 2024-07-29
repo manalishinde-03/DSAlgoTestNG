@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
 
-public class Login extends BaseTest {
+public class LoginTestCases extends BaseTest {
 	
 	@Test
 	public void TC_01_LoginSuccessful() {
