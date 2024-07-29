@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.LoginPage;
+import utilities.LoggerLoad;
 
 public class LoginTestCases extends BaseTest {
 	
@@ -20,7 +21,7 @@ public class LoginTestCases extends BaseTest {
 		loginPage.clickLoginBtn();
 		
 		homePage.validateMsgAfterLogin("You are logged in");
-		
+		LoggerLoad.info("Title:" +driver.getTitle());
 		System.out.println("Title:" +driver.getTitle());
 		
 	}
