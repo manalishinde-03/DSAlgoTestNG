@@ -6,6 +6,7 @@ import pages.CommonPage;
 import pages.GraphPage;
 import pages.HomePage;
 import pages.LoginPage;
+import utilities.LoggerLoad;
 
 public class GraphTestCases extends BaseTest {
 	
@@ -23,6 +24,7 @@ public class GraphTestCases extends BaseTest {
 		commonPage.Handledropbox();
 		GraphPage Graph = new GraphPage(driver);
 		Graph.GraphOptions();
+		LoggerLoad.info("Title:" +driver.getTitle());
 		System.out.println("Title:" +driver.getTitle());
 		
 	}
@@ -41,6 +43,7 @@ public class GraphTestCases extends BaseTest {
 		commonPage.Handledropbox();
 		GraphPage GraphPage = new GraphPage(driver);
 		GraphPage.GraphOptions();
+		LoggerLoad.info("Title:" +driver.getTitle());
 		System.out.println("Title:" +driver.getTitle());
 		GraphPage.Graph(driver, 5);
 		

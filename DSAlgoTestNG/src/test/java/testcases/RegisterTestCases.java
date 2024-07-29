@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.RegisterPage;
+import utilities.LoggerLoad;
 
 public class RegisterTestCases extends BaseTest {
 	
@@ -19,6 +20,7 @@ public class RegisterTestCases extends BaseTest {
 		registerPage.enterPassword("Time2fly$");
 		registerPage.enterPasswordConfirmation("Time2fly$");
 		registerPage.clickRegisterBtn();
+		LoggerLoad.info("Title:" +driver.getTitle());
 		
 		String expectedMessage ="New Account Created. You are logged in as" +username;
 		homePage.validateMsgAfterRegistration(expectedMessage,username);
